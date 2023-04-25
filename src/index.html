@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Age calculator app</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="full-date">
+        <div class="date day">
+          <label for="day">DAY</label>
+          <input
+            type="number"
+            placeholder="DD"
+            maxlength="2"
+            data-id="day-input"
+            oninput="this.value=this.value.slice(0,this.maxLength)"
+          />
+          <h6 class="error" id="error-day"></h6>
+        </div>
+        <div class="date month">
+          <label for="month">MONTH</label>
+          <input
+            type="number"
+            placeholder="MM"
+            maxlength="2"
+            data-id="month-input"
+            oninput="this.value=this.value.slice(0,this.maxLength)"
+          />
+          <h6 class="error" id="error-month"></h6>
+        </div>
+        <div class="date year">
+          <label for="year">YEAR</label>
+          <input
+            type="number"
+            placeholder="YYYY"
+            maxlength="4"
+            data-id="year-input"
+            oninput="this.value=this.value.slice(0,this.maxLength)"
+          />
+          <h6 class="error" id="error-year"></h6>
+        </div>
+      </div>
+      <div class="arrow">
+        <button type="submit" class="arrow-img" data-id="submit-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="46"
+            height="44"
+            viewBox="0 0 46 44"
+          >
+            <g fill="none" stroke="#FFF" stroke-width="4">
+              <path
+                d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"
+              />
+            </g>
+          </svg>
+        </button>
+      </div>
+      <div class="result">
+        <div class="result-date years" data-id="result-years">
+          <span>--</span>years
+        </div>
+        <div class="result-date months" data-id="result-months">
+          <span>--</span>months
+        </div>
+        <div class="result-date days" data-id="result-days">
+          <span>--</span>days
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
