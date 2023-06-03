@@ -1,6 +1,6 @@
 # Age calculator
 Responsive age calculator app made using HTML, SCSS, JS. I used Vite as local server and bundler. <br>
-Live demo: https://age-calculator-app-main-2.onrender.com/
+Live demo: https://age-calculator-app-main-2.onrender.com
 <br>
 <br>
 ![desktop](https://user-images.githubusercontent.com/107587774/236267096-05b21fc2-74ba-406b-8955-dc8ddf3f529f.png)
